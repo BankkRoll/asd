@@ -28,7 +28,7 @@ const contactItems = [
   },
   {
     social: 'Instagram',
-    link: 'shahnawazfakir',
+    link: 'shahnawazzx',
     href: 'https://www.instagram.com/shahnawazzx/',
   },
 ];

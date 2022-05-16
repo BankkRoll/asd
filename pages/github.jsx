@@ -4,7 +4,8 @@ import RepoCard from '../components/RepoCard';
 import styles from '../styles/GithubPage.module.css';
 
 const GithubPage = ({ repos, user }) => {
-  var {repos = [] } = repos;
+  // var {repos = [] } = repos;
+  repos = Array.from(repos)
   const theme = {
     level0: '#161B22',
     level1: '#0e4429',
@@ -16,16 +17,16 @@ const GithubPage = ({ repos, user }) => {
   return (
     <>
       <div className={styles.user}>
-        {/* <div>
+        <div>
           <Image
-            src={user.avatar_url}
+            src={'https://avatars.githubusercontent.com/u/79532117?s=400&u=6b9c510de67936d3b7b95eac270070ca8e499de0&v=4'}
             className={styles.avatar}
             alt={user.login}
             width={50}
             height={50}
           />
           <h3 className={styles.username}>{user.login}</h3>
-        </div> */}
+        </div>
         <div>
           <h3>{user.public_repos} repos</h3>
         </div>
@@ -71,7 +72,7 @@ export async function getStaticProps() {
   );
   let repos = await repoRes.json();
 
-  function highest(repos) { 
+  function highest() { 
     return [].slice.call(arguments).sort(function(a,b){ 
       return b.stargazers_count - a.stargazers_count; 
     }); 

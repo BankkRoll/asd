@@ -6,15 +6,15 @@ const ArticlesPage = ({ articles }) => {
   return (
     <>
       <h3>
-        Recent Posts from{' '}
-        <a
+        Coming Soon{' '}
+        {/* <a
           href="https://dev.to/itsnitinr"
           target="_blank"
           rel="noopener"
           className={styles.underline}
         >
           dev.to
-        </a>
+        </a> */}
       </h3>
       <div className={styles.container}>
         {articles.map((article) => (
