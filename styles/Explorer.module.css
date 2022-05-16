@@ -18,7 +18,7 @@
 .heading {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   letter-spacing: 1px;
   display: flex;
   align-items: center;
@@ -42,6 +42,7 @@
   display: flex;
   align-items: center;
   font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .file p {
