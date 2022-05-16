@@ -5,7 +5,7 @@ import styles from '../styles/GithubPage.module.css';
 
 const GithubPage = ({ repos, user }) => {
   var repos = Array.from(repos)
-  
+
   const theme = {
     level0: '#161B22',
     level1: '#0e4429',
@@ -74,7 +74,15 @@ export async function getStaticProps() {
     }
   );
   let repos = await repoRes.json();
-  repos = repos.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 6);
+
+  function highest(repos) { 
+    return [].slice.call(arguments).sort(function(a,b){ 
+      return b.stargazers_count - a.stargazers_count; 
+    }); 
+  }
+  highest(repos);
+
+  // repos = repos.sort((a, b) => b.stargazers_count - a.stargazers_count).slice(0, 6);
 
   return {
     props: { title: 'GitHub', repos, user },
