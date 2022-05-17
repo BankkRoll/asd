@@ -6,6 +6,8 @@ const contactItems = [
   },
   {
     education: 'Major: Computer Science',
+    // link: 'link',
+    // href: 'github.io',
   },
   {
     education: 'Graduation: 2025'
