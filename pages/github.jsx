@@ -39,6 +39,7 @@ const GithubPage = ({ repos, user }) => {
           <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
+      <h3>Github Contributions Calender</h3>
       <div className={styles.contributions}>
         <GitHubCalendar
           username={user.login}
