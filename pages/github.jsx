@@ -13,25 +13,26 @@ const GithubPage = ({ repos, user }) => {
     level4: '#39d353',
   };
 
+  user.login = 'shahnawazfakir'
   return (
     <>
       <div className={styles.user}>
-        {/* <div>
+        <div>
           <Image
-            src={user.avatar_url}
+            src={'https://avatars.githubusercontent.com/u/79532117?s=400&u=6b9c510de67936d3b7b95eac270070ca8e499de0&v=4'}
             className={styles.avatar}
             alt={user.login}
             width={50}
             height={50}
           />
           <h3 className={styles.username}>{user.login}</h3>
-        </div> */}
-        <div>
-          <h3>{user.public_repos} repos</h3>
         </div>
         <div>
+          <h3>{user.public_repos} 5 repos</h3>
+        </div>
+        {/* <div>
           <h3>{user.followers} followers</h3>
-        </div>
+        </div> */}
       </div>
       <div className={styles.container}>
         {repos.map((repo) => (
@@ -40,11 +41,8 @@ const GithubPage = ({ repos, user }) => {
       </div>
       <div className={styles.contributions}>
         <GitHubCalendar
-          // username={process.env.GITHUB_USERNAME}
-          username={process.env.GITHUB_USERNAME}
+          username={user.login}
           theme={theme}
-          hideColorLegend
-          hideMonthLabels
         />
       </div>
     </>
@@ -71,12 +69,16 @@ export async function getStaticProps() {
     }
   );
   let repos = await repoRes.json();
-  // repos = repos
-  //   .sort((a, b) => b.stargazers_count - a.stargazers_count)
-  //   .slice(0, 6);
+
+  function highest(){ 
+    return [].slice.call(arguments).sort(function(a,b){ 
+      return b - a; 
+    }); 
+  }
+  highest(repos);
 
   return {
-    props: { title: 'GitHub', repos, user },
+    props: { title: 'GitHub', repos, user},
     revalidate: 10,
   };
 }
