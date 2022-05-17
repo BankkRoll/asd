@@ -2,26 +2,45 @@
   {
     "id": 1,
     "name": "Portfolio Website",
-    "image": "https://imgur.com/mKkz0iz.png",
-    "description": "Portfolio website",
+    "image": "https://i.imgur.com/uce0lAq.png",
+    "description": "Portfolio Website",
     "tags": ["React", "Node", "JavaScript", "SCSS"],
     "demo": "https://shahnawazfakir.github.io/"
   },
   {
     "id": 2,
     "name": "Weather App",
-    "image": "https://imgur.com/tAZotn3.png",
-    "description": "Weather app",
+    "image": "https://i.imgur.com/1bl6UwM.png",
+    "description": "Weather Application",
     "tags": ["react", "node", "html"],
+    "source_code": "https://github.com/shahnawazfakir/weather",
     "demo": "https://shahnawazfakir.github.io/weather/"
   },
   {
-    "id": 4,
+    "id": 3,
     "name": "VSCode Portfolio",
     "image": "https://imgur.com/mKkz0iz.png",
-    "description": "A themeable and developer-centric portfolio based on the VSCode",
+    "description": "VSCode Theme Portfolio",
     "tags": ["next", "css-modules"],
     "source_code": "https://github.com/shahnawazfakir/vscode",
     "demo": "https://shahnawazfakir.vercel.app/"
+  },
+  {
+    "id": 4,
+    "name": "First Website",
+    "image": "https://i.imgur.com/BmFvYqV.png",
+    "description": "A themeable and developer-centric portfolio based on the VSCode",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "source_code": "https://github.com/shahnawazfakir/website1",
+    "demo": "https://shahnawazfakir.github.io/website1/"
+  },
+  {
+    "id": 5,
+    "name": "Connect-Four",
+    "image": "https://i.imgur.com/9VWnxgA.png",
+    "description": "Game",
+    "tags": ["Python"],
+    "source_code": "https://github.com/shahnawazfakir/Connect-Four",
+    "demo": "https://github.com/shahnawazfakir/Connect-Four"
   }
 ]
