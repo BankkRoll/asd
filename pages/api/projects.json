@@ -12,7 +12,7 @@
     "name": "Weather App",
     "image": "https://i.imgur.com/1bl6UwM.png",
     "description": "Weather Application",
-    "tags": ["react", "node", "html"],
+    "tags": ["HTML", "CSS", "JavaScript"],
     "source_code": "https://github.com/shahnawazfakir/weather",
     "demo": "https://shahnawazfakir.github.io/weather/"
   },
