@@ -9,52 +9,52 @@
 }
 
 /* Tags */
-.react {
+.React {
   border: 0.1rem solid rgb(97, 218, 251);
 }
-.react:hover {
+.React:hover {
   background: rgba(97, 218, 251, 0.25);
 }
 
-.node {
+.Node {
   border: 0.1rem solid rgb(131, 205, 41);
 }
 .node:hover {
   background: rgba(131, 205, 41, 0.25);
 }
 
-.mongodb {
+.HTML {
   border: 0.1rem solid rgb(67, 153, 52);
 }
-.mongodb:hover {
+.HTML:hover {
   background: rgba(67, 153, 52, 0.25);
 }
 
-.redux {
+.JavaScript {
   border: 0.1rem solid rgb(118, 74, 188);
 }
-.redux:hover {
+.JavaScript:hover {
   background: rgba(118, 74, 188, 0.25);
 }
 
-.razorpay {
+.CSS {
   border: 0.1rem solid rgb(82, 143, 240);
 }
-.razorpay:hover {
+.CSS:hover {
   background: rgba(82, 143, 240, 0.25);
 }
 
-.material-ui {
+.Python {
   border: 0.1rem solid rgb(25, 118, 210);
 }
-.material-ui:hover {
+.Python:hover {
   background: rgba(25, 118, 210, 0.25);
 }
 
-.bulma {
+.SCSS {
   border: 0.1rem solid rgb(0, 209, 178);
 }
-.bulma:hover {
+.SCSS:hover {
   background: rgb(0, 209, 178, 0.25);
 }
 
