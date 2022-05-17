@@ -26,7 +26,7 @@ const explorerItems = [
     icon: 'js_icon.svg',
   },
   {
-    name: 'articles.json',
+    name: 'education.json',
     path: '/articles',
     icon: 'json_icon.svg',
   },
